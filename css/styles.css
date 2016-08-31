@@ -1,0 +1,172 @@
+/* Mixins */
+/* Print CSS */
+@media print {
+  * {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+  a, a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: "(" attr(href) ")"; }
+  abbr[title]:after {
+    content: "(" attr(title) ")"; }
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  h2, h3 {
+    page-break-after: avoid; }
+  h2, h3, p {
+    orphans: 3;
+    widows: 3; }
+  select {
+    background: #fff !important; } }
+
+/*--- Theme ----------------------------------------------------------------------------------------------------------*/
+/* Fonts */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: OpenSans-Regular,sans-serif;
+  font-size: 14px;
+  line-height: 22px; }
+
+ul, li {
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 1em 0 .25em; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.bg-blue {
+  background: #4c99dc !important; }
+
+.bg-blue-dark {
+  background: #324153; }
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .item .line {
+    width: 68%;
+    height: 3px;
+    background: #53a8d1; }
+
+.info-title {
+  padding: 5px 40px 5px 10px;
+  background: #324155;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .info-title h2 {
+    width: 165px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0; }
+
+.wrapper:after,
+.wrapper:before {
+  content: '';
+  display: table; }
+
+.base-page {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden; }
+
+.wrapper {
+  padding: 0 100px; }
+
+/* Site */
+/*--- Titles ---------------------------------------------------------------------------------------------------------*/
+.extra-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #344455;
+  margin-bottom: 0; }
+
+/*--- /Titles --------------------------------------------------------------------------------------------------------*/
+/*--- Buttons --------------------------------------------------------------------------------------------------------*/
+/*--- /Buttons -------------------------------------------------------------------------------------------------------*/
+/*--- Header ---------------------------------------------------------------------------------------------------------*/
+.header {
+  background: #f3f3f3;
+  padding: 0 0 15px; }
+  .header .header--text {
+    font-size: 14px;
+    color: #344455;
+    text-transform: uppercase; }
+
+/*--- /Header --------------------------------------------------------------------------------------------------------*/
+/*--- /Info block ----------------------------------------------------------------------------------------------------*/
+.info-block {
+  padding: 15px 0 0; }
+
+/*--- /Info block ----------------------------------------------------------------------------------------------------*/
+.skills {
+  padding: 15px 0; }
+  .skills .skills-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+    .skills .skills-items--item {
+      width: 20%;
+      text-align: center; }
+      .skills .skills-items--item .precent-circle {
+        width: 115px;
+        height: 115px;
+        margin: 0 auto 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-border: 10px solid #d4d4d6;
+        -moz-border: 10px solid #d4d4d6;
+        -ms-border: 10px solid #d4d4d6;
+        border: 10px solid #d4d4d6; }
+        .skills .skills-items--item .precent-circle .precent-text {
+          font-size: 32px;
+          color: #151d26; }
+      .skills .skills-items--item .skill-title--text {
+        text-transform: uppercase; }
+
+.experience,
+.education {
+  padding: 45px 0; }
+
+/*--- /Footer --------------------------------------------------------------------------------------------------------*/
+/*--- /Footer --------------------------------------------------------------------------------------------------------*/
+/* Media Queries */

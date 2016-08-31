@@ -1,0 +1,60 @@
+/*--- Header ---------------------------------------------------------------------------------------------------------*/
+.header{
+  background: #f3f3f3;
+  padding: 0 0 15px;
+  .header--text{
+    font-size: 14px;
+    color: #344455;
+    text-transform: uppercase;
+  }
+}
+/*--- /Header --------------------------------------------------------------------------------------------------------*/
+
+/*--- /Info block ----------------------------------------------------------------------------------------------------*/
+.info-block{
+  padding: 15px 0 0;
+}
+/*--- /Info block ----------------------------------------------------------------------------------------------------*/
+
+
+.skills{
+  padding: 15px 0;
+  .skills-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    &--item{
+      width: 20%;
+      text-align: center;
+      .precent-circle{
+        width: 115px;
+        height: 115px;
+        margin: 0 auto 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include border-radius(50%);
+        @include border(10px solid #d4d4d6);
+        .precent-text{
+          font-size: 32px;
+          color: #151d26;
+        }
+      }
+      .skill-title{
+        &--text{
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+}
+
+.experience,
+.education{
+  padding: 45px 0;
+}
+
+/*--- /Footer --------------------------------------------------------------------------------------------------------*/
+
+/*--- /Footer --------------------------------------------------------------------------------------------------------*/
