@@ -19,7 +19,7 @@ gulp.task('build', ['watch']);
 
 // css task's
 gulp.task('sass', function () {
-    gulp.src('./scss/*.scss')
+    gulp.src('./src/scss/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 });
@@ -48,6 +48,6 @@ gulp.task('watch', function() {
   })
   gulp.watch('./*html', browserSync.reload);
   gulp.watch('./css/*.css');
-  gulp.watch('./scss/*.scss', ['sass-watch']);
+  gulp.watch('./src/scss/*.scss', ['sass-watch']);
 });
 

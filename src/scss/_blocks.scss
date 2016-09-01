@@ -12,21 +12,45 @@
 
 /*--- /Info block ----------------------------------------------------------------------------------------------------*/
 .info-block{
-  padding: 15px 0 0;
+  padding-top: 15px;
+  .info-short{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    &--about{
+      width: 215px;
+      flex-shrink: 0;
+      margin-right: 35px;
+      .text{
+        padding-left: 10px;
+      }
+    }
+    &--description{
+      display: flex;
+      justify-content: flex-start;
+      .my-photo{
+        margin-right: 25px;
+      }
+    }
+  }
 }
 /*--- /Info block ----------------------------------------------------------------------------------------------------*/
 
-
+/*--- /Skills --------------------------------------------------------------------------------------------------------*/
 .skills{
   padding: 15px 0;
   .skills-items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 20px;
     &--item{
       width: 20%;
+      min-width: 125px;
       text-align: center;
-      .precent-circle{
+      margin-bottom: 10px;
+      .percent-circle{
+        position: relative;
         width: 115px;
         height: 115px;
         margin: 0 auto 5px;
@@ -35,7 +59,7 @@
         align-items: center;
         @include border-radius(50%);
         @include border(10px solid #d4d4d6);
-        .precent-text{
+        .percent-text{
           font-size: 32px;
           color: #151d26;
         }
@@ -47,14 +71,10 @@
       }
     }
   }
-
 }
+/*--- /Skills --------------------------------------------------------------------------------------------------------*/
 
 .experience,
 .education{
   padding: 45px 0;
 }
-
-/*--- /Footer --------------------------------------------------------------------------------------------------------*/
-
-/*--- /Footer --------------------------------------------------------------------------------------------------------*/

@@ -12,6 +12,14 @@
   box-sizing:         $var;
 }
 
+@mixin transform($transforms) {
+  -moz-transform:    $transforms;
+  -o-transform:      $transforms;
+  -ms-transform:     $transforms;
+  -webkit-transform: $transforms;
+  transform:         $transforms;
+}
+
 @mixin border-radius($radius){
   -webkit-border-radius: $radius;
   -moz-border-radius:    $radius;
@@ -21,7 +29,7 @@
 
 @mixin border($border...){
   -webkit-border: $border;
-  -moz-border:   $border;
+  -moz-border:    $border;
   -ms-border:     $border;
   border:         $border;
 }
