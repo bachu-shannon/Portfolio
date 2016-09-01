@@ -1,17 +1,32 @@
-// Laptop Large
-@media screen and (max-width: 1198px){}
-
-// Laptop
-@media screen and (max-width: 1024px){}
-
-// Tablet
-@media screen and (max-width: 768px){}
-
 // Mobile Large
-@media screen and (max-width: 425px){}
-
-// Mobile Medium
-@media screen and (max-width: 375px){}
-
-// Mobile Small
-@media screen and (max-width: 320px){}
+@media screen and (max-width: 425px){
+  .header, footer{
+    text-align: center;
+  }
+  .wrapper {
+    padding: 0 5%;
+  }
+  .block-title .line{
+    display: none;
+  }
+  .info-block .info-short{
+    display: block;
+    &--description{
+      margin-top: 20px;
+    }
+  }
+  .footer{
+    padding-bottom: 20px;
+    .extra-title{
+      font-size: 25px;
+    }
+  }
+  .block-title .title,
+  .info-block .info-short--about{
+    margin: 0 auto;
+  }
+  .info-block .info-short--description {
+    text-align: center;
+    display: block;
+  }
+}

@@ -57,28 +57,27 @@ h1, h2, h3, h4, h5, h6{
   font-family: $OpenSansBold;
 }
 
-.item{
+.block-title{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .title{
+    width: 210px;
+    margin-right: 41px;
+    padding: 5px 40px 5px 10px;
+    background: #324155;
+    @include border-radius(5px);
+    h2{
+      width: 165px;
+      color: #fff;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
   .line{
     width: 68%;
     height: 3px;
     background: #53a8d1;
-  }
-}
-
-.title{
-  width: 210px;
-  margin-right: 41px;
-  padding: 5px 40px 5px 10px;
-  background: #324155;
-  @include border-radius(5px);
-  h2{
-    width: 165px;
-    color: #fff;
-    font-weight: 400;
-    margin: 0;
   }
 }
 
@@ -98,7 +97,7 @@ h1, h2, h3, h4, h5, h6{
       top: 3px;
       @include border-radius(50%);
     }
-    .year-text{
+    &--bage{
       display: inline-block;
       color: #fff;
       margin-left: 35px;
@@ -112,11 +111,19 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-.circle{
+.circle-svg{
   position: absolute;
+  @include transform(rotate(-90deg));
+  .circle{
+    stroke-dashoffset: 288.88;
+    /*transition: stroke-dashoffset 1s linear;*/
+    stroke: #53a8d1;
+    stroke-width: 8px;
+  }
 }
 
-svg{
-  @include transform(rotateY(-180deg) rotate(100deg));
+.experience,
+.education{
+  padding: 45px 0;
 }
 

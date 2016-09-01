@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="src/js/jquery.js"></script>
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="build/js/jquery.js"></script>
+    <script src="build/js/function.js"></script>
 </head>
 <body>
     <section class="base-page">
@@ -19,7 +20,7 @@
 
         <section class="info-block">
             <div class="wrapper">
-                <div class="item">
+                <div class="block-title">
                     <div class="title">
                         <h2 class="uppercase">About me</h2>
                     </div>
@@ -43,7 +44,7 @@
                         </table>
                     </div>
                     <div class="info-short--description">
-                        <div class="my-photo"><img src="src/img/my.jpg" alt="Hello)"></div>
+                        <div class="my-photo"><img src="build/img/my.jpg" alt="Hello)"></div>
                         <div class="my-description-text">
                             <p class="text">I like minimalism, nice music, sport and driving.</p>
                         </div>
@@ -54,7 +55,7 @@
 
         <section class="skills">
             <div class="wrapper">
-                <div class="item">
+                <div class="block-title">
                     <div class="title">
                         <h2 class="uppercase">Skills</h2>
                     </div>
@@ -63,11 +64,11 @@
                 <ul class="skills-items">
                     <li class="skills-items--item">
                         <div class="percent-circle">
-                            <svg class="circle" id="circle-1" height="115px" viewBox="0 0 320 175">
-                                <path fill="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke="#4c99dc" d="M80,80 A80,80 0 1,180.61117636732928,100.45116865416591" stroke-width="15" id="path1"/>
+                            <svg class="circle-svg" id="circle-1" width="115px" height="115px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle" r="46" cx="50" cy="50" fill="transparent" stroke-dasharray="288.88" stroke-dashoffset="0"></circle>
                             </svg>
                             <div class="percent-text">
-                                <span id="percent-val-1" data-percent="98">98%</span>
+                                <span class="percent-val" id="percent-val-1" data-percent="80">0%</span>
                             </div>
                         </div>
                         <div class="skill-title">
@@ -76,11 +77,11 @@
                     </li>
                     <li class="skills-items--item">
                         <div class="percent-circle">
-                            <svg class="circle" id="circle-2" height="115px" viewBox="0 0 320 175">
-                                <path fill="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke="#4c99dc" d="M80,80 A80,80 0 1,180.61117636732928,100.45116865416591" stroke-width="15" id="path2"/>
+                            <svg class="circle-svg" id="circle-2" width="115px" height="115px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle" r="46" cx="50" cy="50" fill="transparent" stroke-dasharray="288.88" stroke-dashoffset="0"></circle>
                             </svg>
                             <div class="percent-text">
-                                <span id="percent-val-2" data-percent="95">95%</span>
+                                <span class="percent-val" id="percent-val-2" data-percent="85">0%</span>
                             </div>
                         </div>
                         <div class="skill-title">
@@ -89,41 +90,41 @@
                     </li>
                     <li class="skills-items--item">
                         <div class="percent-circle">
-                            <svg class="circle" id="circle-3" height="115px" viewBox="0 0 320 175">
-                                <path fill="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke="#4c99dc" d="M80,80 A80,80 0 1,180.61117636732928,100.45116865416591" stroke-width="15" id="path3"/>
+                            <svg class="circle-svg" id="circle-3" width="115px" height="115px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle" r="46" cx="50" cy="50" fill="transparent" stroke-dasharray="288.88" stroke-dashoffset="0"></circle>
                             </svg>
                             <div class="percent-text">
-                                <span id="percent-val-3" data-percent="75">75%</span>
+                                <span class="percent-val" id="percent-val-3" data-percent="75">0%</span>
                             </div>
                         </div>
                         <div class="skill-title">
-                            <span class="skill-title--text">js</span>
+                            <span class="skill-title--text">...</span>
+                        </div>
+                    </li>
+                    <li class="skills-items--item">
+                        <div class="percent-circle" id="lazinnes">
+                            <svg class="circle-svg" id="circle-4" width="115px" height="115px" viewBox="0 0 100 100">
+                                <circle class="circle" r="46" cx="50" cy="50" fill="transparent" stroke-dasharray="288.88" stroke-dashoffset="0"></circle>
+                            </svg>
+                            <div class="percent-text">
+                                <span class="percent-val" id="percent-val-4" data-percent="15">0%</span>
+                            </div>
+                        </div>
+                        <div class="skill-title">
+                            <span class="skill-title--text">laziness</span>
                         </div>
                     </li>
                     <li class="skills-items--item">
                         <div class="percent-circle">
-                            <svg class="circle" id="circle-4" height="115px" viewBox="0 0 320 175">
-                                <path fill="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke="#4c99dc" d="M80,80 A80,80 0 1,180.61117636732928,100.45116865416591" stroke-width="15" id="path4"/>
+                            <svg class="circle-svg" id="circle-5" width="115px" height="115px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle"  r="46" cx="50" cy="50" fill="transparent" stroke-dasharray="288.88" stroke-dashoffset="0"></circle>
                             </svg>
                             <div class="percent-text">
-                                <span id="percent-val-4" data-percent="90">90%</span>
+                                <span class="percent-val" id="percent-val-5" data-percent="69">0%</span>
                             </div>
                         </div>
                         <div class="skill-title">
-                            <span class="skill-title--text">gulp</span>
-                        </div>
-                    </li>
-                    <li class="skills-items--item">
-                        <div class="percent-circle">
-                            <svg class="circle" id="circle-5" height="115px" viewBox="0 0 320 175">
-                                <path fill="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke="#4c99dc" d="M80,80 A80,80 0 1,180.61117636732928,100.45116865416591" stroke-width="15" id="path5"/>
-                            </svg>
-                            <div class="percent-text">
-                                <span id="percent-val-5" data-percent="85">85%</span>
-                            </div>
-                        </div>
-                        <div class="skill-title">
-                            <span class="skill-title--text">git</span>
+                            <span class="skill-title--text">humor</span>
                         </div>
                     </li>
                 </ul>
@@ -132,7 +133,7 @@
 
         <section class="experience bg-blue-dark">
             <div class="wrapper">
-                <div class="item">
+                <div class="block-title">
                     <div class="title bg-blue">
                         <h2 class="uppercase">Experience</h2>
                     </div>
@@ -141,8 +142,8 @@
 
                 <ul class="list">
                     <li class="list-item">
-                        <span class="place-of-work">"MART" studio </span>
-                        <span class="year-text bg-blue">2015 - Present</span>
+                        <span class="list-item--title">"MART" studio </span>
+                        <span class="list-item--bage bg-blue">2015 - Present</span>
                         <p class="text">
                             Building mobile responsive site <br>
                             Front-end development using latest HTML5 and CSS3 standard <br>
@@ -150,8 +151,8 @@
                         </p>
                     </li>
                     <li class="list-item">
-                        <span class="place-of-work">Freelance</span>
-                        <span class="year-text bg-blue">2015 - Present</span>
+                        <span class="list-item--title">Freelance</span>
+                        <span class="list-item--bage bg-blue">2015 - Present</span>
                         <p class="text">Front-end development and supporting.</p>
                     </li>
                 </ul>
@@ -160,7 +161,7 @@
 
         <section class="education bg-blue-dark">
             <div class="wrapper">
-                <div class="item">
+                <div class="block-title">
                     <div class="title bg-blue">
                         <h2 class="uppercase">Education</h2>
                     </div>
@@ -169,15 +170,19 @@
 
                 <ul class="list">
                     <li class="list-item">
-                        <span class="place-of-work fz-normal">University OGASA, faculty of Hydraulic engineering and Special construction</span>
-                        <span class="year-text bg-blue fz-normal">2008 - 2013</span>
+                        <span class="list-item--title fz-normal">University OGASA</span>
+                        <span class="list-item--bage bg-blue fz-normal">2008 - 2013</span>
                     </li>
                 </ul>
             </div>
         </section>
 
-    </section>
+        <footer class="footer">
+            <div class="wrapper">
+                <h2 class="extra-title uppercase">Front-end developer</h2>
+            </div>
+        </footer>
 
-    <script src="src/js/function.js"></script>
+    </section>
 </body>
 </html>
