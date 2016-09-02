@@ -21,15 +21,12 @@ gulp.task('build', ['watch']);
 gulp.task('sass', function () {
     gulp.src('./src/scss/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./build/css'));
-});
-
-gulp.task('prefixer', function(){
-  gulp.src('./build/css/styles.css')
-  .pipe( postcss([
-      autoprefixer({ browsers: ['last 5 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'] }),
-  ]))
-  .pipe(gulp.dest('build/css'));
+        .pipe( postcss([
+            autoprefixer({
+                browsers: ['last 5 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
+            })
+        ]))
+        .pipe(gulp.dest('build/css'));
 });
 
 //watch task & browser-sync
@@ -39,7 +36,11 @@ gulp.task('sass-watch', ['sass'], function(){
     }, 200);
 });
 
-gulp.task('watch', function() {
+/*gulp.task('prefixer', function(){
+
+});*/
+
+gulp.task('watch',['sass'], function() {
   browserSync({
     server: {
       baseDir: './'
